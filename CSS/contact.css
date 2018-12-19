@@ -1,0 +1,55 @@
+#contactMe
+{
+    text-align: center;
+    position: relative;
+    left: 75px;
+}
+
+.form-group
+{
+    padding-top: 30px;
+}
+
+#cName
+{
+    position: relative;
+    right: 15px;
+}
+
+
+
+#cEmail
+{
+    position: relative;
+    right: 40px;
+
+}
+
+#comment
+{
+    position: relative;
+    top: 28px;
+    right: 37px;
+}
+
+#nA
+{
+    position: relative;
+    right: 5px;
+}
+
+#eA
+{
+    position: relative;
+    right: 5px;
+}
+
+.btn
+{
+    background-color: aliceblue;
+}
+
+#contact
+{
+    color: aliceblue
+}

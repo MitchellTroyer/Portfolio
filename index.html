@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Mitch's Portfolio</title>
+</head>
+<body>
+     <!--jumbotron-->
+     <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">Mitchell's Portfolio</h1>
+          <p class="lead">Hello, Welcome to my portfolio</p>
+        </div>
+      </div>
+          
+      <div id="about" class="contents"><!--About Me-->
+        <div class="body">
+            <h2>About Me</h2>
+            <hr>
+            <hr>
+            <img src="./Assets/img/IMG_2832 copy.JPG" width="200px" height="200px;" id="me">
+            <p>Previous I spent 2 years at Grace College & Seminary for Information Systems. Currently studying at Eleven Fifty Academy for JavaScript, HTML, and CSS. <br>I live in Danville, IN as I have for 15 years. My hobbies include digital entertainment and traveling. Often I would look at a webpage or a game and wornder what went into it to make it work the way it does, so in highschool I took a basic Java and an HTML course. It is my goal to learn different coding langauges and do with them whatever I can develop wether its building websites and 8-bit games or databases and immersive games.</p>
+        </div>
+      </div>
+      
+      <div id="resume" class="contents"><!--resume page-->
+        <div class="body">
+            <h2>My Resume</h2>
+            <hr>
+            <hr>
+            <a href="https://docs.google.com/document/d/1_O2MO4B8p-elb8vYmHx_Dpw7dnGI-VQ2LXrF46sv708/edit?usp=sharing" id="myResume">Click Here to view my Resume</a>
+            <br>
+            <img src="./Assets/img/Screenshot 2018-12-18 21.05.53.jpg" width="255" height="305" id="resPic">
+          </div>
+      </div>
+
+      <div id="creations" class="contents"><!--My Creations-->
+        <div class="body">
+            <h2>My Creations</h2>
+            <hr>
+            <a href="https://codepen.io/MitchellTroyer/pen/VVNYqW" class="myC">Code Pen - See Code Here</a>
+            <hr>
+            <img src="./Assets/img/snowMan.png" width="200" height="200" id="imgPen">
+            <hr>
+            <a href="/Projects/API/API.html" class="myC">D&D API - Click Here</a>
+            <hr>
+            <img src="./Assets/img/Screenshot 2018-12-19 10.59.51.jpg" width="350" height="300" id="dndImg">
+        </div>
+      </div>
+
+      <div id="contact" class="contents"><!--Contact Me-->
+        <div id="contactMe">
+
+                <!--formspree-->
+          <section id="about"></section>
+          <section id="portfolio"></section>
+          <section id="contact">
+            <div class="container">
+              <h2 class="text-center text-uppercase">If you have any questions or comments feel free to Contact Me</h2>
+              <div class="row">
+                <form action="https://formspree.io/MTroyer95@att.net" method="POST">
+                <div class="control-group">
+                    <div class="form-group" id="cName">
+                      <label id="nA">Name:</label>
+                      <input type="text" class="form-control" placeholder="Your Name" id="name" required data-validation-required-message="Please enter your name" name="name">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="form-group" id="cEmail">
+                      <label id="eA">Email Address:</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Your Email"
+                        id="email"
+                        required
+                        data-validation-required-message="Please enter your email"
+                        name="_replyto">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                      <label id="comment">Comments:</label>
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        rows="7"
+                        placeholder="Your Message"
+                        id="message"
+                        required
+                        data-validation-required-message="Please leave a message"
+                        name="message"
+                      ></textarea>
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  </div>
+                  <div class="text-center">
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-lg btn-black">
+                      <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+              </div>
+        </div>
+    
+    <div class="sideBars" id="leftBar"><!--left side bar-->
+      <p>This is my outter shell to the page which I used fixed positions and relative positions to organize the outter parts of the website. In between the sidebars is the main content for the site in which there is a series of divs. These I am able to switch on and off by a lines of JavaScript running behind the scenes and attach to the nav bar on the left.</p>
+    </div>
+    <div class="sideBars" id="rightBar"><!--right side bar-->
+      <p>If you like try and find the hidden alert. moving your mouse around you might find it!</p>
+    </div>
+
+    <!--Nav bar-->
+    <nav class="navbar">
+            <p class="nav-item" id="navHead">Feel Free to Browse</p>
+            <div class="tabs" id="navbarNav">
+                  <button class="tab" onclick="tabbing(event, 'about')" id="default">About Me</button>
+                  <button class="tab" onclick="tabbing(event, 'resume')">My Resume</button>
+                  <button class="tab" onclick="tabbing(event, 'creations')">My Creations</button>
+                  <button class="tab" onclick="tabbing(event, 'contact')">Contact Me</button>
+            </div>
+            <button id="hidden" onclick="alerted(event, 'alerted')"></button>
+    </nav>
+
+<div id="footer2"></div>
+<footer>
+  <a href="https://github.com/MitchellTroyer/Fundamentals" class="socialLink">GitHub</a> &vert;
+  <a href="https://www.linkedin.com/in/mitchell-troyer-049580177/" class="socialLink">LinkedIn</a>
+  <a href=""></a>
+  <br>
+  <p>Created by Mitchell Troyer <br> &copyMTWebPages <br> ElevenFifty Academy</p>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

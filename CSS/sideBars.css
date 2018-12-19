@@ -1,0 +1,23 @@
+.sideBars
+{
+    width: 200px;
+    height: 381px;
+    background-color: var(--m);
+    border-radius: 5px;
+    color: var(--white);
+    padding: 8px;
+}
+
+#rightBar
+{
+    position: fixed;
+    top: 295px; 
+    right: 5px;
+}
+
+#leftBar
+{
+   position: fixed;
+   top: 295px;
+   left: 155px;
+}

@@ -1,0 +1,27 @@
+body
+{
+    background: url(../Assets/img/Sunset\ mountain.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: var(--Oswald);
+    word-wrap: break-word;
+
+}
+
+.body
+{
+    position: relative;
+    left: 370px;
+    top: 4px;
+    height: 650px;
+    width: 630px;
+    padding: 20px;
+    border-radius: 5px;
+    color: aliceblue
+}
+
+h2
+{
+    text-align: center;
+}
+
